@@ -24,7 +24,7 @@
             <button onclick="input.value+='7'">7</button>
             <button onclick="input.value+='8'">8</button>
             <button onclick="input.value+='9'">9</button>
-            <button class="color-right" >*</button>
+            <button class="color-right" onclick="input.value+='*'">*</button>
             <button onclick="input.value+='4'">4</button>
             <button onclick="input.value+='5'">5</button>
             <button onclick="input.value+='6'">6</button>
@@ -33,9 +33,9 @@
             <button onclick="input.value+='2'">2</button>
             <button onclick="input.value+='3'">3</button>
             <button class="color-right" onclick="input.value+='+'">+</button>
-            <button ><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="erase"><i class="fa-solid fa-arrow-left"></i></button>
             <button onclick="input.value+='0'">0</button>
-            <button >.</button>
+            <button onclick="input.value+='.'">.</button>
             <button class="color-right"  onclick="input.value = eval(input.value)">=</button>
         </div>
     </div>
