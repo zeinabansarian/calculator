@@ -1,13 +1,7 @@
 let $ = document
-let number = "0"
-let isDesimal = false
-let inputValue = $.getElementById('input')
-
-
-function addDigits (digit){
-    if (number!= 0)
-    number += digit;
-    else number = digit
-    inputValue.value =+ number
-}
+// let inputValue = $.getElementById('input')
+// let acValue = $.getElementById('ac')
+// acValue.addEventListener('click' , function(){
+//     inputValue.value = ''
+// })
 

@@ -14,29 +14,29 @@
     <div class="calculator">
 
         <div class="input-calc">
-            <div class="input"><input data-previus type="text" placeholder="0" id="input"></div>
+            <div class="input"><input data-previus type="text" placeholder="0" name="input" id="input"></div>
         </div>
         <div class="calculator-main">
-            <button class="color-top" >AC</button>
-            <button class="color-top" >^</button>
-            <button class="color-top">%</button>
+            <button class="color-top" onclick="input.value =''">AC</button>
+            <button class="color-top" value="**" onclick="input.value+='^'">^</button>
+            <button class="color-top" onclick="input.value+='%'">%</button>
             <button class="color-right"> รท </button>
-            <button onclick="addDigits('7')">7</button>
-            <button onclick="addDigits('8')">8</button>
-            <button onclick="addDigits('9')">9</button>
+            <button onclick="input.value+='7'">7</button>
+            <button onclick="input.value+='8'">8</button>
+            <button onclick="input.value+='9'">9</button>
             <button class="color-right" >*</button>
-            <button onclick="addDigits('4')">4</button>
-            <button onclick="addDigits('5')">5</button>
-            <button onclick="addDigits('6')">6</button>
-            <button class="color-right" >-</button>
-            <button onclick="addDigits('1')">1</button>
-            <button onclick="addDigits('2')">2</button>
-            <button onclick="addDigits('3')">3</button>
-            <button class="color-right">+</button>
+            <button onclick="input.value+='4'">4</button>
+            <button onclick="input.value+='5'">5</button>
+            <button onclick="input.value+='6'">6</button>
+            <button class="color-right" onclick="input.value+='-'">-</button>
+            <button value="1" onclick="input.value+='1'">1</button>
+            <button onclick="input.value+='2'">2</button>
+            <button onclick="input.value+='3'">3</button>
+            <button class="color-right" onclick="input.value+='+'">+</button>
             <button ><i class="fa-solid fa-arrow-left"></i></button>
-            <button onclick="addDigits('0')">0</button>
+            <button onclick="input.value+='0'">0</button>
             <button >.</button>
-            <button class="color-right" >=</button>
+            <button class="color-right"  onclick="input.value = eval(input.value)">=</button>
         </div>
     </div>
     <script src="js/all.js"></script>
